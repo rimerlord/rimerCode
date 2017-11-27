@@ -6,7 +6,7 @@
 std::array<int,3> global;               // zero-initialized: {0,0,0}
 
 
-void printLength(const std::array<double, 5> &myarray)
+void printLength(const std::array<double, 5> &myarray) //notice the length mentioned in value here
 {
     std::cout << "length: " << myarray.size();
 }
@@ -87,4 +87,6 @@ int main ()
   std::cout << "second:";
   for (int& x : second3) std::cout << ' ' << x;
   std::cout << '\n';
+  
+  cout<< printLength() <<endl;
 }
