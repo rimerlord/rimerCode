@@ -5,6 +5,12 @@
 // default initialization (non-local = static storage):
 std::array<int,3> global;               // zero-initialized: {0,0,0}
 
+
+void printLength(const std::array<double, 5> &myarray)
+{
+    std::cout << "length: " << myarray.size();
+}
+
 int main ()
 {
   // default initialization (local = automatic storage):
